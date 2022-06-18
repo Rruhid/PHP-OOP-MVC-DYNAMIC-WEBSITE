@@ -4,12 +4,19 @@
  * 
  */
  
-class  Home 
+class  Home extends Controller 
 {
-	 
+	  
 
-public function index($id) {
-		echo "home view page".$id;
+public function index() {
+
+	$db = new Database();
+	$db->query();
+	$data['title'] = "sdfsdf sdf";
+		
+	$this -> view('home', $data);
+
+
 	}
 
 
@@ -18,8 +25,8 @@ public function index($id) {
 	}
 
 
-	public function delete($id) {
-		echo "home deleting". $id;
+	public function delete() {
+		echo "home deleting";
 	}
  
 
