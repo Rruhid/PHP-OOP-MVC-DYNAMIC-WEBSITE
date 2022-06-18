@@ -49,7 +49,7 @@ class app {
                }
            }    
 
-            show($arr);
+            //show($arr);
          //  var_dump($mycontroller);
            $arr = array_values($arr);
            call_user_func_array([$mycontroller,$this->method], $arr); 

@@ -11,7 +11,13 @@ class  Home extends Controller
 public function index() {
 
 	$db = new Database();
-	$db->query();
+	//$db->create_tables();
+
+	$res = $db->query("select * from users");
+
+	//show($res);
+
+
 	$data['title'] = "sdfsdf sdf";
 		
 	$this -> view('home', $data);

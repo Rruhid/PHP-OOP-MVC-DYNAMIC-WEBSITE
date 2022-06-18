@@ -18,7 +18,7 @@ if($_SERVER['SERVER_NAME'] == 'localhost'){
 } else {
 
     define ('DBHOST', 'localhost');
-    define ('DBNAME', 'udemy_db');
+    define ('DBNAME', 'course_db');
     define ('DBUSER', 'root');
     define ('DBPASS', '');
     define ('DBDRIVER', 'mysql');
